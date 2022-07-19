@@ -1,0 +1,12 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.jumbotron {
+	padding: 40px;
+}
+
+.jumbotron h1 {
+	font-family: 'Catamaran', sans-serif;
+	color:peru;
+}
