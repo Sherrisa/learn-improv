@@ -26,7 +26,7 @@
           <div class="container">
             <h1 class="display-4">Learn Improvisation</h1>
             <p class="lead">
-              Say something clever here.
+              "Do not fear mistakes. There are none." - Miles Davis
             </p>
           </div>
         </div>
@@ -37,20 +37,74 @@
         </div>
         <div class="col-sm col-md-4">
           <h2>Chord Speller</h2>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" id="rootSelection">
             <option selected>Choose a root</option>
-            <option value="D">D</option>
-            <option value="G">G</option>
-            <option value="C">C</option>
-						<option value="F">F</option>
+            <option value="csharp">C#</option>
+            <option value="fsharp">F#</option>
+            <option value="b">B</option>
+            <option value="e">E</option>
+            <option value="a">A</option>
+            <option value="d">D</option>
+            <option value="g">G</option>
+            <option value="c">C</option>
+						<option value="f">F</option>
+            <option value="bb">Bb</option>
+            <option value="eb">Eb</option>
+            <option value="ab">Ab</option>
+            <option value="dd">Db</option>
+            <option value="gb">Gb</option>
           </select>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select mt-3" id="chordSelection">
             <option selected>Choose a chord</option>
             <option value="major">major</option>
             <option value="m">m</option>
             <option value="dim">dim</option>
+            <option value="dim7">dim7</option>
+            <option value="sus2">sus2</option>
+            <option value="sus4">sus4</option>
+            <option value="7sus4">7sus4</option>
 						<option value="aug">aug</option>
+            <option value="aug7">aug7</option>
+            <option value="aug9">aug9</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="69">69</option>
+            <option value="7">7</option>
+            <option value="7b5">7b5</option>
+            <option value="7b9">7b9</option>
+            <option value="7sharp9">7#9</option>
+            <option value="7b5b9">7b5b9</option>
+            <option value="7sharp5b9">7#5b9</option>
+            <option value="7b5sharp9">7b5#9</option>
+            <option value="7sharp5sharp9">7#5#9</option>
+            <option value="9">9</option>
+            <option value="9b5">9b5</option>
+            <option value="9sharp11">9#11</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="add9">add9</option>
+            <option value="maj7">maj7</option>
+            <option value="maj7b5">maj7b5</option>
+            <option value="maj7sharp5">maj7#5</option>
+            <option value="maj9">maj9</option>
+            <option value="maj11">maj11</option>
+            <option value="maj13">maj13</option>
+            <option value="m6">m6</option>
+            <option value="m69">m69</option>
+            <option value="m7">m7</option>
+            <option value="m7b5">m7b5</option>
+            <option value="m9">m9</option>
+            <option value="m11">m11</option>
+            <option value="mmaj7">mmaj7</option>
+            <option value="mmaj7b5">mmaj7b5</option>
+            <option value="mmaj9">mmaj9</option>
+            <option value="mmaj11">mmaj11</option>
+            <option value="madd9">madd9</option>
           </select>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-dark mt-3" id="showNotesBtn">Show Notes</button>
+          </div>
+          <div id="showNotes"></div>
         </div>
       </div>
     </div>
