@@ -10,3 +10,35 @@ body {
 	font-family: 'Catamaran', sans-serif;
 	color:peru;
 }
+
+/* #showNotes {
+	background-color: peru;
+	color: white;
+	height: 50px;
+} */
+
+.chord-slides {
+	background-color: peru;
+	color: white;
+	font-size: 24px;
+}
+
+/* ul.cycle-slideshow{
+	padding-left: 0;
+} */
+
+/* li.cycle-slide.cycle-slide-active{
+	position: static !important;
+	text-align: center;
+} */
+
+.pause-resume {
+	text-align: center;
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
