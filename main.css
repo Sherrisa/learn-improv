@@ -17,6 +17,10 @@ body {
 	height: 50px;
 } */
 
+.pattern {
+	font-size: 22px;
+}
+
 .chord-slides {
 	background-color: peru;
 	color: white;
