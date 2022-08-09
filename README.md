@@ -23,3 +23,9 @@ https://www.youtube.com/watch?v=8Yum7EQgadM
 
 how to go to a URL with JQuery click function
 https://www.delftstack.com/howto/javascript/javascript-onclick-goto-url/
+
+how to omit my improv.js file from my git commit
+https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/
+
+obfuscator
+https://obfuscator.io/
