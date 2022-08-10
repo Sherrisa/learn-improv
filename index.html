@@ -1,1419 +1,1640 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Improvisation</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Improvisation</title>
+    <!-- Links for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Links for google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Montserrat:wght@300;400;700&display=swap"
-    rel="stylesheet" />
+    <!-- JQuery UI stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
 
-  <!-- JQuery UI stylesheet-->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <link rel="stylesheet" href="main.css" />
+    <!-- include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- include jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- include JQuery UI: for accordion -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
-  <!-- include JQuery UI: for accordion -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- include Cycle2: this copy from Activity 6.3.2 -->
+    <script src="https://malsup.github.io/jquery.cycle2.js"></script>
 
-  <!-- include Cycle2: this copy from Activity 6.3.2 -->
-  <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+    <!-- include Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- include Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+    <script defer src="obfuscated.js"></script>
+  </head>
 
-  <script defer src="obfuscated.js"></script>
-</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron jumbotron-fluid text-center">
+          <div class="container">
+            <h1 class="display-4">Learn Improvisation</h1>
+            <p class="lead">
+              "Do not fear mistakes. There are none." - Miles Davis
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 1: Scales</h2>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-          <h1 class="display-4">Learn Improvisation</h1>
-          <p class="lead">
-            "Do not fear mistakes. There are none." - Miles Davis
+          <p>
+            <strong>Getting Started: </strong>
+            Welcome to my tutorial on improvisation! I am honored that you have
+            taken this time on your musical journey to explore the art of
+            composing music in the moment. My intent in this tutorial is to
+            share only the information you absolutely need to get started
+            creating original solos, however, at times there may be too little
+            information and you may feel lost on your journey. That's to be
+            expected. Please feel free to click the
+            <strong>Book a Lesson </strong>button at the bottom the page when
+            you want some extra help.
+          </p>
+          <p>
+            <strong>The Chromatic Scale: </strong>
+            The chromatic scale is the foundation to all improvisation. I once
+            heard a jazz musician say, if you play a note you don't like, you're
+            only a half step away from one you will like. The first step in
+            learning to improvise is mastering your chromatic scale. I like to
+            teach the chromatic scale with sharps going up and flats coming
+            down. Here is the complete scale up and down beginning on C:
+            <strong> Up: C-C#-D-D#-E-F-F#-G-G#-A-A#-B-C </strong>and
+            <strong> Down: C-B-Bb-A-Ab-G-Gb-F-E-Eb-D-Db-C </strong>
+          </p>
+          <p>
+            <strong>Major Scale Formula: </strong>Once you've mastered your
+            chromatic scale, you're ready to move on to the major scale. There
+            are multiple ways to learn your major scales. Some musicians learn
+            them by learning the flats or sharps in the scale. Others pick them
+            out by ear and memorize them. I like to use the major scale formula
+            with new students. If we let R = Root, WS = Whole Step, and HS =
+            Half Step, the formula is: R WS WS HS WS WS WS HS. Root is the first
+            note, so if you're trying to find the Eb scale, Eb is the root. From
+            the Root, we move by half steps and whole steps until we arrive back
+            at the root. A half step is a movement to the very next note of the
+            chromatic scale. A whole step skips the very next note of the
+            chromatic scale and plays the note after. If this seems confusing,
+            studying the Major Scale chart may be helpful.
+          </p>
+          <p>
+            <strong>15 Scales Instead of 12: </strong> How many major scales are
+            there? My guess is that most musicians would say 12, but there are
+            actually 15 when we're thinking about improvisation. Let's look at
+            Db. We can think of this scale as the Db scale or the C# scale. The
+            fingering is the same, so why would I practice both? If I'm in the
+            key of E, it's quite likey I'm going to run across a C# chord
+            somewhere in my song. If I've only practiced that scale as Db, C#
+            may feel a little uncomfortable in the moment. The charts in this
+            tutorial only have 14 keys though, because I've never seen anyone
+            put Cb on a lead sheet.
+          </p>
+
+          <p>
+            <strong>E#, Fb, B#, Cb: </strong> This may be an good time to point
+            out that on the Major Scale chart, I use the theoretically correct
+            names for the notes E#, B# and Cb, but in the next lesson and
+            througout the rest of the course, I will be using F for E#, C for B#
+            and B for Cb.
           </p>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 1: Scales</h2>
-        
-        <p><strong>Getting Started: </strong>
-        Welcome to my tutorial on improvisation! I am honored that you have taken this time on your musical journey to
-        explore the art of composing music in the moment. My intent in this tutorial is to share only the information
-        you absolutely need to get started creating original solos, however, at times there may be too little
-        information and you may feel lost on your journey. That's to be expected. Please feel free to click the
-        <strong>Book a Lesson </strong>button at the bottom the page when you want some extra help.</p>
-        <p>
-        <strong>The Chromatic Scale: </strong>
-        The chromatic scale is the foundation to all improvisation. I once heard a jazz musician say, if you play a note
-        you don't like, you're only a half step away from one you will like. The first step in learning to improvise is
-        mastering your chromatic scale. I like to teach the chromatic scale with sharps going up and flats coming down.
-        Here is the complete scale up and down beginning on C: <strong>
-          Up: C-C#-D-D#-E-F-F#-G-G#-A-A#-B-C </strong>and <strong>
-          Down: C-B-Bb-A-Ab-G-Gb-F-E-Eb-D-Db-C
-        </strong>
-        </p>
-        <p>
-        <strong>Major Scale Formula: </strong>Once you've mastered your chromatic scale, you're ready to move on to the major scale. There are multiple ways to learn your major scales. Some musicians learn them by learning the flats or
-        sharps in the scale. Others pick them out by ear and memorize them. I like to use the major scale formula with
-        new students. If we let R = Root, WS = Whole Step, and HS = Half Step, the formula is: R WS WS HS WS WS WS HS.
-        Root is the first note, so if you're trying to find the Eb scale, Eb is the root. From the Root, we move by half
-        steps and whole steps until we arrive back at the root. A half step is a movement to the very next note of the
-        chromatic scale. A whole step skips the very next note of the chromatic scale and plays the note after. If this
-        seems confusing, studying the Major Scale chart may be helpful.
-        </p>
-        <p><strong>15 Scales Instead of 12: </strong>
-        How many major scales are there? My guess is that most musicians would say 12, but there are actually 15 when
-        we're thinking about improvisation. Let's look at Db. We can think of this scale as the Db scale or the C#
-        scale. The fingering is the same, so why would I practice both? If I'm in the key of E, it's quite likey I'm
-        going to run across a C# chord somewhere in my song. If I've only practiced that scale as Db, C# may feel a
-        little uncomfortable in the moment. The charts in this tutorial only have 14 keys though, because I've never
-        seen anyone put Cb on a lead sheet.
-        
-        <p>
-        <strong>E#, Fb, B#, Cb: </strong> This may be an good time to point out that on the Major Scale chart, I use the
-        theoretically correct names for the notes E#, B# and Cb, but in the next lesson and througout the rest of the course, I will be using F for E#, C for B# and B for Cb.</p>
-
-      
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <h2>Major Scales</h2>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">Root</th>
-              <th scope="col">2</th>
-              <th scope="col">3</th>
-              <th scope="col">4</th>
-              <th scope="col">5</th>
-              <th scope="col">6</th>
-              <th scope="col">7</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">C#</th>
-              <td>D#</td>
-              <td>E#</td>
-              <td>F#</td>
-              <td>G#</td>
-              <td>A#</td>
-              <td>B#</td>
-            </tr>
-            <tr>
-              <th scope="row">F#</th>
-              <td>G#</td>
-              <td>A#</td>
-              <td>B</td>
-              <td>C#</td>
-              <td>D#</td>
-              <td>E#</td>
-            </tr>
-            <tr>
-              <th scope="row">B</th>
-              <td>C#</td>
-              <td>D#</td>
-              <td>E</td>
-              <td>F#</td>
-              <td>G#</td>
-              <td>A#</td>
-            </tr>
-            <tr>
-              <th scope="row">E</th>
-              <td>F#</td>
-              <td>G#</td>
-              <td>A</td>
-              <td>B</td>
-              <td>C#</td>
-              <td>D#</td>
-            </tr>
-            <tr>
-              <th scope="row">A</th>
-              <td>B</td>
-              <td>C#</td>
-              <td>D</td>
-              <td>E</td>
-              <td>F#</td>
-              <td>G#</td>
-            </tr>
-            <tr>
-              <th scope="row">D</th>
-              <td>E</td>
-              <td>F#</td>
-              <td>G</td>
-              <td>A</td>
-              <td>B</td>
-              <td>C#</td>
-            </tr>
-            <tr>
-              <th scope="row">G</th>
-              <td>A</td>
-              <td>B</td>
-              <td>C</td>
-              <td>D</td>
-              <td>E</td>
-              <td>F#</td>
-            </tr>
-            <tr>
-              <th scope="row">C</th>
-              <td>D</td>
-              <td>E</td>
-              <td>F</td>
-              <td>G</td>
-              <td>A</td>
-              <td>B</td>
-            </tr>
-            <tr>
-              <th scope="row">F</th>
-              <td>G</td>
-              <td>A</td>
-              <td>Bb</td>
-              <td>C</td>
-              <td>D</td>
-              <td>E</td>
-            </tr>
-            <tr>
-              <th scope="row">Bb</th>
-              <td>C</td>
-              <td>D</td>
-              <td>Eb</td>
-              <td>F</td>
-              <td>G</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <th scope="row">Eb</th>
-              <td>F</td>
-              <td>G</td>
-              <td>Ab</td>
-              <td>Bb</td>
-              <td>C</td>
-              <td>C</td>
-            </tr>
-            <tr>
-              <th scope="row">Ab</th>
-              <td>Bb</td>
-              <td>C</td>
-              <td>Db</td>
-              <td>Eb</td>
-              <td>F</td>
-              <td>G</td>
-            </tr>
-            <tr>
-              <th scope="row">Db</th>
-              <td>Eb</td>
-              <td>F</td>
-              <td>Gb</td>
-              <td>Ab</td>
-              <td>Bb</td>
-              <td>C</td>
-            </tr>
-            <tr>
-              <th scope="row">Gb</th>
-              <td>Ab</td>
-              <td>Bb</td>
-              <td>Cb</td>
-              <td>Db</td>
-              <td>Eb</td>
-              <td>F</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 2: Triad Chords</h2>
-        <p>
-        <strong>Creating a Solo with Chord Tones: </strong>The best way to get started improvising is to play chord
-        tones. Let's take a look at a simple chord progression in the key of C: Em-Am-Dm-G. Assume the song is in 4/4
-        time and each chord lasts one measure. To keep things simple, we will play 4 quarter notes for each measure.
-        To build a minor chord from our major scale we use the root, the 3rd lowered a half step, and the 5th.
-        Referring back to the Major Scales chart, you can see the notes for an Em chord would be E, G (G# lowered a
-        half step), and B. We need a fourth note, so we'll add E up an octave from the first E as our fourth note.
-        Continuing in this manner, we would play; A, C, E, A for the Am chord; D, F, A, D for the Dm chord and G, B,
-        D, G for the G chord. Our solo from start to finish would be: E, G, B, E, A, C, E, A, D, F, A, D, G, B, D, G.
-        </p>
-        <p>
-        <strong>Make It Your Own: </strong>To get started you'll need the lead sheet to a song that you already know
-        well on your instrument. I recommend using a song in 4/4 time with chord changes that last an entire measure.
-        Although improvising is done in the moment, for this first exercise, we are going to write the notes out like
-        in the example for the Em-Am-Dm-G progression. Write out the chord tones for four measures at a time. Every
-        four measures, stop and play through what you've written. Unless you're a bass player, this won't be what
-        you'll actually play when you improvise, but it's the foundation you will use to build your solos.</p>
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <div class="accordion lesson1">
-          <h3>Major</h3>
-
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2>Major Scales</h2>
           <table class="table table-bordered">
             <thead>
               <tr>
                 <th scope="col">Root</th>
+                <th scope="col">2</th>
                 <th scope="col">3</th>
+                <th scope="col">4</th>
                 <th scope="col">5</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>E#</td>
-                <td>G#</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A#</td>
-                <td>C#</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D#</td>
-                <td>F#</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G#</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C#</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F#</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>B</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>E</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>A</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>D</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>G</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>C</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>F</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>Bb</td>
-                <td>Db</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Minor</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">b3</th>
-                <th scope="col">5</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>E</td>
-                <td>G#</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A</td>
-                <td>C#</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D</td>
-                <td>F#</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>Bb</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>Eb</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>Ab</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>Db</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>Gb</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>B</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>E</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>A</td>
-                <td>Db</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Diminished</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">b3</th>
-                <th scope="col">b5</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>E</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>Bb</td>
-                <td>Db</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>Eb</td>
-                <td>Gb</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>Ab</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>Db</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>Gb</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>B</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>E</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>A</td>
-                <td>C</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Augmented</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">3</th>
-                <th scope="col">#5</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>E#</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A#</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D#</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G#</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C#</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F#</td>
-                <td>A#</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>B</td>
-                <td>D#</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>E</td>
-                <td>G#</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>A</td>
-                <td>C#</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>D</td>
-                <td>F#</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>G</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>C</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>F</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>Bb</td>
-                <td>D</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 3: Patterns</h2>
-        <p>
-        <strong>In the Practice Room: </strong>
-        If you're like most students writing out the chord tones for a lead sheet was a lot of work the first time and
-        definitely wasn't something you felt like you could do in the moment performing in front of an audience.
-        Advanced musicians make improvising look natural and effortless, but there's a lot of work that happened in the
-        practice room before they step in front of an audience. It takes hours of practice to create the muscle memory
-        that makes soloing appear smooth and easy.
-        </p>
-        <p>
-        <strong>The Circle of 5ths: </strong>I recommend using the circle of 5ths to practice the triad chords we've learned so
-        far. Start on C and play the 1-3-5-8 pattern for your major, minor, diminished, and augmented chords in that
-        key. Next move to F, the next scale to the left on the circle of 5ths and work the same pattern for the major,
-        minor, diminished, and augmented chords. Continue on to Bb, Eb, Ab, Db and Gb. Remember Gb is also F#. Practice
-        that scale first thinking of the notes for Gb and then the notes for F#. Now continue on through the sharp keys:
-        B, E, A, D, and G.</p>
-        <p>
-        <strong>Try a New Pattern: </strong>Once you feel comfortable with the 1-3-5-8 pattern, try something new like 1-8-5-3.
-        Work through the circle of 5ths using this pattern until it's comfortable for all 12 chords. Once both of those
-        patterns feel smooth, try alternating between the two patterns. Some other patterns to try are
-        <strong>1-3-5-3</strong> and <strong>3-1-3-5</strong>. Once you are comfortable alternating through a variety of
-        patterns, you are ready to move to the next section where we begin to add in the <strong>passing tones 2 and
-          6</strong>.</p>
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <h2 class="pattern">1-3-5-8 Pattern</h2>
-
-        <!-- Slideshow of images using JQuery + Cycle2 Plugin-->
-        <ul class="cycle-slideshow1 chord-slides">
-          <li>C major</li>
-          <li>C-E-G-C</li>
-          <li>C minor</li>
-          <li>C-Eb-G-C</li>
-          <li>C diminished</li>
-          <li>C-Eb-Gb-C</li>
-          <li>C augmented</li>
-          <li>C-E-G#-C</li>
-          <li>F major</li>
-          <li>F-A-C-F</li>
-          <li>F minor</li>
-          <li>F-Ab-C-F</li>
-          <li>F diminished</li>
-          <li>F-Ab-B-F</li>
-          <li>F augmented</li>
-          <li>F-A-C#-F</li>
-          <li>Bb major</li>
-          <li>Bb-D-F-Bb</li>
-          <li>Bb minor</li>
-          <li>Bb-Db-F-Bb</li>
-          <li>Bb diminished</li>
-          <li>Bb-Db-E-Bb</li>
-          <li>Bb augmented</li>
-          <li>Bb-D-F#-Bb</li>
-          <li>Eb major</li>
-          <li>Eb-G-Bb-Eb</li>
-          <li>Eb minor</li>
-          <li>Eb-Gb-Bb-Eb</li>
-          <li>Eb diminished</li>
-          <li>Eb-Gb-A-Eb</li>
-          <li>Eb augmented</li>
-          <li>Eb-G-B-E</li>
-          <li>Ab major</li>
-          <li>Ab-C-Eb-Ab</li>
-          <li>Ab minor</li>
-          <li>Ab-B-Eb-Ab</li>
-          <li>Ab diminished</li>
-          <li>Ab-B-D-Ab</li>
-          <li>Ab augmented</li>
-          <li>Ab-C-E-Ab</li>
-          <li>Db major</li>
-          <li>Db-F-Ab-Db</li>
-          <li>Db minor</li>
-          <li>Db-E-Ab-Db</li>
-          <li>Db diminished</li>
-          <li>Db-E-G-Db</li>
-          <li>Db augmented</li>
-          <li>Db-F-A-Db</li>
-          <li>F# major</li>
-          <li>F#-A#-C#-F#</li>
-          <li>F# minor</li>
-          <li>F#-A - C# - F#</li>
-          <li>F# diminished</li>
-          <li>F#-A-C-F</li>
-          <li>F# augmented</li>
-          <li>F#-A#-D-F#</li>
-          <li>B major</li>
-          <li>B-D#-F#-B</li>
-          <li>B minor</li>
-          <li>B-D-F#-B</li>
-          <li>B diminished</li>
-          <li>B-D-F-B</li>
-          <li>B augmented</li>
-          <li>B-D#-F#-B</li>
-          <li>E major</li>
-          <li>E-G#-B-E</li>
-          <li>E minor</li>
-          <li>E-G-B-E</li>
-          <li>E diminished</li>
-          <li>E-G-Bb-E</li>
-          <li>E augmented</li>
-          <li>E-G#-C-E</li>
-          <li>A major</li>
-          <li>A-C#-E-A</li>
-          <li>A minor</li>
-          <li>A-C-E-A</li>
-          <li>A diminished</li>
-          <li>A-C-Eb-A</li>
-          <li>A augmented</li>
-          <li>A-C#-E#-A</li>
-          <li>D major</li>
-          <li>D-F#-A-D</li>
-          <li>D minor</li>
-          <li>D-F-A-D</li>
-          <li>D diminished</li>
-          <li>D-F-Ab-D</li>
-          <li>D augmented</li>
-          <li>D-F#-A#-D</li>
-          <li>G major</li>
-          <li>G-B-D-B</li>
-          <li>G minor</li>
-          <li>G-Bb-D-G</li>
-          <li>G diminished</li>
-          <li>G-Bb-Db-G</li>
-          <li>G augmented</li>
-          <li>G-B-D#-G</li>
-        </ul>
-        <div class="pause-resume pb-5">
-          <button type="button" class="btn btn-dark" id="pauseBtn1">Pause</button>
-          <button type="button" class="btn btn-dark" id="resumeBtn1">Resume</button>
-        </div>
-        <h2 class="pattern">1-8-5-3 Pattern</h2>
-
-        <!-- Slideshow of images using JQuery + Cycle2 Plugin-->
-        <ul class="cycle-slideshow2 chord-slides">
-          <li>C major</li>
-          <li>C-C-G-E</li>
-          <li>C minor</li>
-          <li>C-C-G-Eb</li>
-          <li>C diminished</li>
-          <li>C-C-Gb-Eb</li>
-          <li>C augmented</li>
-          <li>C-C-G#-E</li>
-          <li>F major</li>
-          <li>F-F-C-A</li>
-          <li>F minor</li>
-          <li>F-F-C-Ab</li>
-          <li>F diminished</li>
-          <li>F-F-B-Ab</li>
-          <li>F augmented</li>
-          <li>F-F-C#-A</li>
-          <li>Bb major</li>
-          <li>Bb-Bb-F-D</li>
-          <li>Bb minor</li>
-          <li>Bb-B-F-Db</li>
-          <li>Bb diminished</li>
-          <li>Bb-Bb-E-Db</li>
-          <li>Bb augmented</li>
-          <li>Bb-Bb-F#-D</li>
-          <li>Eb major</li>
-          <li>Eb-Eb-Bb-G</li>
-          <li>Eb minor</li>
-          <li>Eb-Eb-Bb-Gb</li>
-          <li>Eb diminished</li>
-          <li>Eb-Eb-A-Gb</li>
-          <li>Eb augmented</li>
-          <li>Eb-E-B-G</li>
-          <li>Ab major</li>
-          <li>Ab-Ab-Eb-C</li>
-          <li>Ab minor</li>
-          <li>Ab-Ab-Eb-B</li>
-          <li>Ab diminished</li>
-          <li>Ab-Ab-D-B</li>
-          <li>Ab augmented</li>
-          <li>Ab-Ab-E-C</li>
-          <li>Db major</li>
-          <li>Db-Db-Ab-F</li>
-          <li>Db minor</li>
-          <li>Db-Db-Ab-E</li>
-          <li>Db diminished</li>
-          <li>Db-Db-G-E</li>
-          <li>Db augmented</li>
-          <li>Db-Db-A-F</li>
-          <li>F# major</li>
-          <li>F#-F#-C#-A#</li>
-          <li>F# minor</li>
-          <li>F#-F#-C#-A</li>
-          <li>F# diminished</li>
-          <li>F#-F-C-A</li>
-          <li>F# augmented</li>
-          <li>F#-F#-D-A#</li>
-          <li>B major</li>
-          <li>B-B-F#-D#</li>
-          <li>B minor</li>
-          <li>B-B-F#-D</li>
-          <li>B diminished</li>
-          <li>B-B-F-D</li>
-          <li>B augmented</li>
-          <li>B-B-F#-D#</li>
-          <li>E major</li>
-          <li>E-E-B-G#</li>
-          <li>E minor</li>
-          <li>E-E-B-G</li>
-          <li>E diminished</li>
-          <li>E-E-Bb-G</li>
-          <li>E augmented</li>
-          <li>E-E-C-G#</li>
-          <li>A major</li>
-          <li>A-A-E-C#</li>
-          <li>A minor</li>
-          <li>A-A-E-C</li>
-          <li>A diminished</li>
-          <li>A-A-Eb-C</li>
-          <li>A augmented</li>
-          <li>A-A-E#-C#</li>
-          <li>D major</li>
-          <li>D-D-A-F#</li>
-          <li>D minor</li>
-          <li>D-D-A-F</li>
-          <li>D diminished</li>
-          <li>D-D-Ab-F</li>
-          <li>D augmented</li>
-          <li>D-D-A#-F#</li>
-          <li>G major</li>
-          <li>G-G-D-B</li>
-          <li>G minor</li>
-          <li>G-G-D-Bb</li>
-          <li>G diminished</li>
-          <li>G-G-Db-Bb</li>
-          <li>G augmented</li>
-          <li>G-G-D#-B</li>
-        </ul>
-        <div class="pause-resume">
-          <button type="button" class="btn btn-dark" id="pauseBtn2">Pause</button>
-          <button type="button" class="btn btn-dark" id="resumeBtn2">Resume</button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 4: Pentatonic</h2>
-        <p>
-        <strong>Try the Pentatonic: </strong>Let's take some time to look at an easy scale that's great for soloing. For a
-        moment
-        we'll put aside what we've learned about chords and work exclusively with the pentatonic scale for the key we
-        are in. Going back to the major scale, <strong>the formula for the pentatonic scale is: 1-2-3-5-6</strong>.
-        Instead of changing
-        with each new chord, we will use just this one scale for the entire song, so if the song is in the key of F, use
-        F-G-A-C-D to build a solo no matter where the song is in the chord progression.
-        </p>
-    
-
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <!-- Slideshow of text using JQuery + Cycle2 Plugin-->
-        <h2 class="pattern">Pentatonic Scale</h2>
-        <ul class="cycle-slideshow3 chord-slides">
-          <li>C Pentatonic</li>
-          <li>C-D-E-G-A</li>
-          <li>F Pentatonic</li>
-          <li>F-G-A-C-D</li>
-          <li>Bb Pentatonic</li>
-          <li>Bb-C-D-F-G</li>
-          <li>Eb Pentatonic</li>
-          <li>Eb-F-G-Bb-C</li>
-          <li>Ab Pentatonic</li>
-          <li>Ab-Bb-C-Eb-F</li>
-          <li>Db Pentatonic</li>
-          <li>Db-Eb-F-Ab-Bb</li>
-          <li>F# Pentatonic</li>
-          <li>F#-G#-A#-C#-D#</li>
-          <li>B Pentatonic</li>
-          <li>B-C#-D#-F#-G#</li>
-          <li>E Pentatonic</li>
-          <li>E-F#-G#-B-C#</li>
-          <li>A Pentatonic</li>
-          <li>A-B-C#-E-F#</li>
-          <li>D Pentetonic</li>
-          <li>D-E-F#-A-B</li>
-          <li>G Pentatonic</li>
-          <li>G-A-B-D-E</li>
-        </ul>
-        <div class="pause-resume">
-          <button type="button" class="btn btn-dark" id="pauseBtn3">Pause</button>
-          <button type="button" class="btn btn-dark" id="resumeBtn3">Resume</button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 5: 7th Chords</h2>
-        <p>
-        <strong>Adding 7ths: </strong>
-        I'm sure you've noticed that rarely do you see simply major, minor, diminished, augmented chords on your lead
-        sheets. No doubt those lead sheets are filled with 7ths, 9ths, and numerous other unfamiliar additions. In this lesson, we'll learn the sevenths. To build a major 7th (maj7) we add the 7 from the major scale to the 1-3-5 for the major chord, making the <strong>maj7 formula: 1-3-5-7</strong>. If a lead sheet adds 7 to a chord without the "maj" or "m", this is what's called a dominant 7th. For this chord, we will take that same b7 and add it to the 1-3-5 for the major chord, making the <strong>dominant 7 formula: 1-3-5-b7</strong>. For the minor 7th, we will  from the major scale a half step (b7) and then add it to the 1-b3-5 for the minor chord, making the <strong>m7 formula: 1-b3-5-b7</strong>. The next seventh chord we will learn is the m7b5, which is built by adding the b7 to the 1-b3-b5 for the diminished chord, making the <strong>m7b5 formula: 1-b3-b5-b7</strong>. the final seventh chord we will learn is the diminished 7th. You might be thinking, wait, didn't we just add a 7th to the diminished chord? Yes, we did, but that chord goes by a different name. To build a diminished seventh, we must also diminish the 7th, which means we need to lower that b7 down another half step to a bb7, making the <strong>dim7 formula: 1-b3-b5-bb7</strong>.
-        </p>
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <div class="accordion lesson1">
-          <h3>maj7</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">3</th>
-                <th scope="col">5</th>
+                <th scope="col">6</th>
                 <th scope="col">7</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">C#</th>
-                <td>E</td>
-                <td>G#</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A#</td>
-                <td>C#</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
                 <td>D#</td>
+                <td>E#</td>
                 <td>F#</td>
+                <td>G#</td>
+                <td>A#</td>
+                <td>B#</td>
+              </tr>
+              <tr>
+                <th scope="row">F#</th>
+                <td>G#</td>
+                <td>A#</td>
+                <td>B</td>
+                <td>C#</td>
+                <td>D#</td>
+                <td>E#</td>
+              </tr>
+              <tr>
+                <th scope="row">B</th>
+                <td>C#</td>
+                <td>D#</td>
+                <td>E</td>
+                <td>F#</td>
+                <td>G#</td>
                 <td>A#</td>
               </tr>
               <tr>
                 <th scope="row">E</th>
+                <td>F#</td>
                 <td>G#</td>
+                <td>A</td>
                 <td>B</td>
+                <td>C#</td>
                 <td>D#</td>
               </tr>
               <tr>
                 <th scope="row">A</th>
+                <td>B</td>
                 <td>C#</td>
+                <td>D</td>
                 <td>E</td>
+                <td>F#</td>
                 <td>G#</td>
               </tr>
               <tr>
                 <th scope="row">D</th>
+                <td>E</td>
                 <td>F#</td>
+                <td>G</td>
                 <td>A</td>
+                <td>B</td>
                 <td>C#</td>
               </tr>
               <tr>
                 <th scope="row">G</th>
+                <td>A</td>
                 <td>B</td>
+                <td>C</td>
                 <td>D</td>
+                <td>E</td>
                 <td>F#</td>
               </tr>
               <tr>
                 <th scope="row">C</th>
+                <td>D</td>
                 <td>E</td>
+                <td>F</td>
                 <td>G</td>
+                <td>A</td>
                 <td>B</td>
               </tr>
               <tr>
                 <th scope="row">F</th>
+                <td>G</td>
                 <td>A</td>
+                <td>Bb</td>
                 <td>C</td>
+                <td>D</td>
                 <td>E</td>
               </tr>
               <tr>
                 <th scope="row">Bb</th>
+                <td>C</td>
                 <td>D</td>
+                <td>Eb</td>
                 <td>F</td>
+                <td>G</td>
                 <td>A</td>
               </tr>
               <tr>
                 <th scope="row">Eb</th>
-                <td>G</td>
-                <td>Bb</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>C</td>
-                <td>Eb</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
                 <td>F</td>
-                <td>Ab</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>Bb</td>
-                <td>Db</td>
-                <td>F</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>m7</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">3b</th>
-                <th scope="col">5</th>
-                <th scope="col">7b</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>Eb</td>
-                <td>G#</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A</td>
-                <td>C#</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D</td>
-                <td>F#</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
                 <td>G</td>
-                <td>B</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C</td>
-                <td>E</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F</td>
-                <td>A</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>Bb</td>
-                <td>D</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>Eb</td>
-                <td>G</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
                 <td>Ab</td>
-                <td>C</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>Db</td>
-                <td>F</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>Gb</td>
                 <td>Bb</td>
-                <td>Db</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>B</td>
-                <td>Eb</td>
-                <td>Gb</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>E</td>
-                <td>Ab</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>A</td>
-                <td>Db</td>
-                <td>E</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>m7b5</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">3b</th>
-                <th scope="col">5b</th>
-                <th scope="col">7b</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>Eb</td>
-                <td>G</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A</td>
                 <td>C</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D</td>
-                <td>F</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G</td>
-                <td>Bb</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C</td>
-                <td>Eb</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F</td>
-                <td>Ab</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>Bb</td>
-                <td>Db</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>Eb</td>
-                <td>Gb</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>Ab</td>
-                <td>B</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>Db</td>
-                <td>E</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>Gb</td>
-                <td>A</td>
-                <td>Db</td>
-              </tr>
-              <tr>
-                <th scope="row">Ab</th>
-                <td>B</td>
-                <td>D</td>
-                <td>Gb</td>
-              </tr>
-              <tr>
-                <th scope="row">Db</th>
-                <td>E</td>
-                <td>G</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">Gb</th>
-                <td>A</td>
-                <td>C</td>
-                <td>E</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>dim7</h3>
-
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Root</th>
-                <th scope="col">b3</th>
-                <th scope="col">b5</th>
-                <th scope="col">b7</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">C#</th>
-                <td>Eb</td>
-                <td>G</td>
-                <td>Bb</td>
-              </tr>
-              <tr>
-                <th scope="row">F#</th>
-                <td>A</td>
-                <td>C</td>
-                <td>Eb</td>
-              </tr>
-              <tr>
-                <th scope="row">B</th>
-                <td>D</td>
-                <td>F</td>
-                <td>Ab</td>
-              </tr>
-              <tr>
-                <th scope="row">E</th>
-                <td>G</td>
-                <td>Bb</td>
-                <td>Db</td>
-              </tr>
-              <tr>
-                <th scope="row">A</th>
-                <td>C</td>
-                <td>Eb</td>
-                <td>Gb</td>
-              </tr>
-              <tr>
-                <th scope="row">D</th>
-                <td>F</td>
-                <td>Ab</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <th scope="row">G</th>
-                <td>Bb</td>
-                <td>Db</td>
-                <td>E</td>
-              </tr>
-              <tr>
-                <th scope="row">C</th>
-                <td>Eb</td>
-                <td>Gb</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <th scope="row">F</th>
-                <td>Ab</td>
-                <td>B</td>
-                <td>D</td>
-              </tr>
-              <tr>
-                <th scope="row">Bb</th>
-                <td>Db</td>
-                <td>E</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <th scope="row">Eb</th>
-                <td>Gb</td>
-                <td>A</td>
                 <td>C</td>
               </tr>
               <tr>
                 <th scope="row">Ab</th>
-                <td>B</td>
-                <td>D</td>
+                <td>Bb</td>
+                <td>C</td>
+                <td>Db</td>
+                <td>Eb</td>
                 <td>F</td>
+                <td>G</td>
               </tr>
               <tr>
                 <th scope="row">Db</th>
-                <td>E</td>
-                <td>G</td>
+                <td>Eb</td>
+                <td>F</td>
+                <td>Gb</td>
+                <td>Ab</td>
                 <td>Bb</td>
+                <td>C</td>
               </tr>
               <tr>
                 <th scope="row">Gb</th>
-                <td>A</td>
-                <td>C</td>
+                <td>Ab</td>
+                <td>Bb</td>
+                <td>Cb</td>
+                <td>Db</td>
                 <td>Eb</td>
+                <td>F</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 6: More Chords</h2>
-        <p><strong>8th and Beyond: </strong>If we continue our major scale for a second octave, the numbering system continues on to 8, 9, 10, 11, 12, and 13. For the C scale, this would make C-8, D-9, E-10, F-11, G-12, and A-13. It's important to note that we don't actually refer to the 10 or the 12 when naming chords.   
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 2: Triad Chords</h2>
+          <p>
+            <strong>Creating a Solo with Chord Tones: </strong>The best way to
+            get started improvising is to play chord tones. Let's take a look at
+            a simple chord progression in the key of C: Em-Am-Dm-G. Assume the
+            song is in 4/4 time and each chord lasts one measure. To keep things
+            simple, we will play 4 quarter notes for each measure. To build a
+            minor chord from our major scale we use the root, the 3rd lowered a
+            half step, and the 5th. Referring back to the Major Scales chart,
+            you can see the notes for an Em chord would be E, G (G# lowered a
+            half step), and B. We need a fourth note, so we'll add E up an
+            octave from the first E as our fourth note. Continuing in this
+            manner, we would play; A, C, E, A for the Am chord; D, F, A, D for
+            the Dm chord and G, B, D, G for the G chord. Our solo from start to
+            finish would be: E, G, B, E, A, C, E, A, D, F, A, D, G, B, D, G.
+          </p>
+          <p>
+            <strong>Make It Your Own: </strong>To get started you'll need the
+            lead sheet to a song that you already know well on your instrument.
+            I recommend using a song in 4/4 time with chord changes that last an
+            entire measure. Although improvising is done in the moment, for this
+            first exercise, we are going to write the notes out like in the
+            example for the Em-Am-Dm-G progression. Write out the chord tones
+            for four measures at a time. Every four measures, stop and play
+            through what you've written. Unless you're a bass player, this won't
+            be what you'll actually play when you improvise, but it's the
+            foundation you will use to build your solos.
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2>Triad Chords</h2>
+          <div class="accordion lesson1">
+            <h3>Major</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3</th>
+                  <th scope="col">5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E#</td>
+                  <td>G#</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A#</td>
+                  <td>C#</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D#</td>
+                  <td>F#</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G#</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C#</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F#</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>B</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>D</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Minor</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">b3</th>
+                  <th scope="col">5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E</td>
+                  <td>G#</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A</td>
+                  <td>C#</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D</td>
+                  <td>F#</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>Bb</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>Eb</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>Ab</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>Db</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>Gb</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>B</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>E</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>A</td>
+                  <td>Db</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Diminished</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">b3</th>
+                  <th scope="col">b5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>Ab</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>Db</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>Gb</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>B</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Augmented</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3</th>
+                  <th scope="col">#5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E#</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A#</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D#</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G#</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C#</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F#</td>
+                  <td>A#</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>B</td>
+                  <td>D#</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>E</td>
+                  <td>G#</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>A</td>
+                  <td>C#</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>D</td>
+                  <td>F#</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>G</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>C</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>F</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>Bb</td>
+                  <td>D</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 3: Patterns</h2>
+          <p>
+            <strong>In the Practice Room: </strong>
+            If you're like most students writing out the chord tones for a lead
+            sheet was a lot of work the first time and definitely wasn't
+            something you felt like you could do in the moment performing in
+            front of an audience. Advanced musicians make improvising look
+            natural and effortless, but there's a lot of work that happened in
+            the practice room before they step in front of an audience. It takes
+            hours of practice to create the muscle memory that makes soloing
+            appear smooth and easy.
+          </p>
+          <p>
+            <strong>The Circle of 5ths: </strong>I recommend using the circle of
+            5ths to practice the triad chords we've learned so far. Start on C
+            and play the 1-3-5-8 pattern for your major, minor, diminished, and
+            augmented chords in that key. Next move to F, the next scale to the
+            left on the circle of 5ths and work the same pattern for the major,
+            minor, diminished, and augmented chords. Continue on to Bb, Eb, Ab,
+            Db and Gb. Remember Gb is also F#. Practice that scale first
+            thinking of the notes for Gb and then the notes for F#. Now continue
+            on through the sharp keys: B, E, A, D, and G.
+          </p>
+          <p>
+            <strong>Try a New Pattern: </strong>Once you feel comfortable with
+            the 1-3-5-8 pattern, try something new like 1-8-5-3. Work through
+            the circle of 5ths using this pattern until it's comfortable for all
+            12 chords. Once both of those patterns feel smooth, try alternating
+            between the two patterns. Some other patterns to try are
+            <strong>1-3-5-3</strong> and <strong>3-1-3-5</strong>. Once you are
+            comfortable alternating through a variety of patterns, you are ready
+            to move to the next section where we begin to add in the
+            <strong>passing tones 2 and 6</strong>.
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2 class="pattern">1-3-5-8 Pattern</h2>
+
+          <!-- Slideshow of images using JQuery + Cycle2 Plugin-->
+          <ul class="cycle-slideshow1 chord-slides">
+            <li>C major</li>
+            <li>C-E-G-C</li>
+            <li>C minor</li>
+            <li>C-Eb-G-C</li>
+            <li>C diminished</li>
+            <li>C-Eb-Gb-C</li>
+            <li>C augmented</li>
+            <li>C-E-G#-C</li>
+            <li>F major</li>
+            <li>F-A-C-F</li>
+            <li>F minor</li>
+            <li>F-Ab-C-F</li>
+            <li>F diminished</li>
+            <li>F-Ab-B-F</li>
+            <li>F augmented</li>
+            <li>F-A-C#-F</li>
+            <li>Bb major</li>
+            <li>Bb-D-F-Bb</li>
+            <li>Bb minor</li>
+            <li>Bb-Db-F-Bb</li>
+            <li>Bb diminished</li>
+            <li>Bb-Db-E-Bb</li>
+            <li>Bb augmented</li>
+            <li>Bb-D-F#-Bb</li>
+            <li>Eb major</li>
+            <li>Eb-G-Bb-Eb</li>
+            <li>Eb minor</li>
+            <li>Eb-Gb-Bb-Eb</li>
+            <li>Eb diminished</li>
+            <li>Eb-Gb-A-Eb</li>
+            <li>Eb augmented</li>
+            <li>Eb-G-B-E</li>
+            <li>Ab major</li>
+            <li>Ab-C-Eb-Ab</li>
+            <li>Ab minor</li>
+            <li>Ab-B-Eb-Ab</li>
+            <li>Ab diminished</li>
+            <li>Ab-B-D-Ab</li>
+            <li>Ab augmented</li>
+            <li>Ab-C-E-Ab</li>
+            <li>Db major</li>
+            <li>Db-F-Ab-Db</li>
+            <li>Db minor</li>
+            <li>Db-E-Ab-Db</li>
+            <li>Db diminished</li>
+            <li>Db-E-G-Db</li>
+            <li>Db augmented</li>
+            <li>Db-F-A-Db</li>
+            <li>F# major</li>
+            <li>F#-A#-C#-F#</li>
+            <li>F# minor</li>
+            <li>F#-A - C# - F#</li>
+            <li>F# diminished</li>
+            <li>F#-A-C-F</li>
+            <li>F# augmented</li>
+            <li>F#-A#-D-F#</li>
+            <li>B major</li>
+            <li>B-D#-F#-B</li>
+            <li>B minor</li>
+            <li>B-D-F#-B</li>
+            <li>B diminished</li>
+            <li>B-D-F-B</li>
+            <li>B augmented</li>
+            <li>B-D#-F#-B</li>
+            <li>E major</li>
+            <li>E-G#-B-E</li>
+            <li>E minor</li>
+            <li>E-G-B-E</li>
+            <li>E diminished</li>
+            <li>E-G-Bb-E</li>
+            <li>E augmented</li>
+            <li>E-G#-C-E</li>
+            <li>A major</li>
+            <li>A-C#-E-A</li>
+            <li>A minor</li>
+            <li>A-C-E-A</li>
+            <li>A diminished</li>
+            <li>A-C-Eb-A</li>
+            <li>A augmented</li>
+            <li>A-C#-E#-A</li>
+            <li>D major</li>
+            <li>D-F#-A-D</li>
+            <li>D minor</li>
+            <li>D-F-A-D</li>
+            <li>D diminished</li>
+            <li>D-F-Ab-D</li>
+            <li>D augmented</li>
+            <li>D-F#-A#-D</li>
+            <li>G major</li>
+            <li>G-B-D-B</li>
+            <li>G minor</li>
+            <li>G-Bb-D-G</li>
+            <li>G diminished</li>
+            <li>G-Bb-Db-G</li>
+            <li>G augmented</li>
+            <li>G-B-D#-G</li>
+          </ul>
+          <div class="pause-resume pb-5">
+            <button type="button" class="btn btn-dark" id="pauseBtn1">
+              Pause
+            </button>
+            <button type="button" class="btn btn-dark" id="resumeBtn1">
+              Resume
+            </button>
+          </div>
+          <h2 class="pattern">1-8-5-3 Pattern</h2>
+
+          <!-- Slideshow of images using JQuery + Cycle2 Plugin-->
+          <ul class="cycle-slideshow2 chord-slides">
+            <li>C major</li>
+            <li>C-C-G-E</li>
+            <li>C minor</li>
+            <li>C-C-G-Eb</li>
+            <li>C diminished</li>
+            <li>C-C-Gb-Eb</li>
+            <li>C augmented</li>
+            <li>C-C-G#-E</li>
+            <li>F major</li>
+            <li>F-F-C-A</li>
+            <li>F minor</li>
+            <li>F-F-C-Ab</li>
+            <li>F diminished</li>
+            <li>F-F-B-Ab</li>
+            <li>F augmented</li>
+            <li>F-F-C#-A</li>
+            <li>Bb major</li>
+            <li>Bb-Bb-F-D</li>
+            <li>Bb minor</li>
+            <li>Bb-B-F-Db</li>
+            <li>Bb diminished</li>
+            <li>Bb-Bb-E-Db</li>
+            <li>Bb augmented</li>
+            <li>Bb-Bb-F#-D</li>
+            <li>Eb major</li>
+            <li>Eb-Eb-Bb-G</li>
+            <li>Eb minor</li>
+            <li>Eb-Eb-Bb-Gb</li>
+            <li>Eb diminished</li>
+            <li>Eb-Eb-A-Gb</li>
+            <li>Eb augmented</li>
+            <li>Eb-E-B-G</li>
+            <li>Ab major</li>
+            <li>Ab-Ab-Eb-C</li>
+            <li>Ab minor</li>
+            <li>Ab-Ab-Eb-B</li>
+            <li>Ab diminished</li>
+            <li>Ab-Ab-D-B</li>
+            <li>Ab augmented</li>
+            <li>Ab-Ab-E-C</li>
+            <li>Db major</li>
+            <li>Db-Db-Ab-F</li>
+            <li>Db minor</li>
+            <li>Db-Db-Ab-E</li>
+            <li>Db diminished</li>
+            <li>Db-Db-G-E</li>
+            <li>Db augmented</li>
+            <li>Db-Db-A-F</li>
+            <li>F# major</li>
+            <li>F#-F#-C#-A#</li>
+            <li>F# minor</li>
+            <li>F#-F#-C#-A</li>
+            <li>F# diminished</li>
+            <li>F#-F-C-A</li>
+            <li>F# augmented</li>
+            <li>F#-F#-D-A#</li>
+            <li>B major</li>
+            <li>B-B-F#-D#</li>
+            <li>B minor</li>
+            <li>B-B-F#-D</li>
+            <li>B diminished</li>
+            <li>B-B-F-D</li>
+            <li>B augmented</li>
+            <li>B-B-F#-D#</li>
+            <li>E major</li>
+            <li>E-E-B-G#</li>
+            <li>E minor</li>
+            <li>E-E-B-G</li>
+            <li>E diminished</li>
+            <li>E-E-Bb-G</li>
+            <li>E augmented</li>
+            <li>E-E-C-G#</li>
+            <li>A major</li>
+            <li>A-A-E-C#</li>
+            <li>A minor</li>
+            <li>A-A-E-C</li>
+            <li>A diminished</li>
+            <li>A-A-Eb-C</li>
+            <li>A augmented</li>
+            <li>A-A-E#-C#</li>
+            <li>D major</li>
+            <li>D-D-A-F#</li>
+            <li>D minor</li>
+            <li>D-D-A-F</li>
+            <li>D diminished</li>
+            <li>D-D-Ab-F</li>
+            <li>D augmented</li>
+            <li>D-D-A#-F#</li>
+            <li>G major</li>
+            <li>G-G-D-B</li>
+            <li>G minor</li>
+            <li>G-G-D-Bb</li>
+            <li>G diminished</li>
+            <li>G-G-Db-Bb</li>
+            <li>G augmented</li>
+            <li>G-G-D#-B</li>
+          </ul>
+          <div class="pause-resume">
+            <button type="button" class="btn btn-dark" id="pauseBtn2">
+              Pause
+            </button>
+            <button type="button" class="btn btn-dark" id="resumeBtn2">
+              Resume
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 4: Pentatonic</h2>
+          <p>
+            <strong>Try the Pentatonic: </strong>Let's take some time to look at
+            an easy scale that's great for soloing. For a moment we'll put aside
+            what we've learned about chords and work exclusively with the
+            pentatonic scale for the key we are in. Going back to the major
+            scale,
+            <strong>the formula for the pentatonic scale is: 1-2-3-5-6</strong>.
+            Instead of changing with each new chord, we will use just this one
+            scale for the entire song, so if the song is in the key of F, use
+            F-G-A-C-D to build a solo no matter where the song is in the chord
+            progression.
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <!-- Slideshow of text using JQuery + Cycle2 Plugin-->
+          <h2 class="pattern">Pentatonic Scale</h2>
+          <ul class="cycle-slideshow3 chord-slides">
+            <li>C Pentatonic</li>
+            <li>C-D-E-G-A</li>
+            <li>F Pentatonic</li>
+            <li>F-G-A-C-D</li>
+            <li>Bb Pentatonic</li>
+            <li>Bb-C-D-F-G</li>
+            <li>Eb Pentatonic</li>
+            <li>Eb-F-G-Bb-C</li>
+            <li>Ab Pentatonic</li>
+            <li>Ab-Bb-C-Eb-F</li>
+            <li>Db Pentatonic</li>
+            <li>Db-Eb-F-Ab-Bb</li>
+            <li>F# Pentatonic</li>
+            <li>F#-G#-A#-C#-D#</li>
+            <li>B Pentatonic</li>
+            <li>B-C#-D#-F#-G#</li>
+            <li>E Pentatonic</li>
+            <li>E-F#-G#-B-C#</li>
+            <li>A Pentatonic</li>
+            <li>A-B-C#-E-F#</li>
+            <li>D Pentetonic</li>
+            <li>D-E-F#-A-B</li>
+            <li>G Pentatonic</li>
+            <li>G-A-B-D-E</li>
+          </ul>
+          <div class="pause-resume">
+            <button type="button" class="btn btn-dark" id="pauseBtn3">
+              Pause
+            </button>
+            <button type="button" class="btn btn-dark" id="resumeBtn3">
+              Resume
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 5: 7th Chords</h2>
+          <p>
+            <strong>Adding 7ths: </strong>
+            I'm sure you've noticed that rarely do you see simply major, minor,
+            diminished, augmented chords on your lead sheets. No doubt those
+            lead sheets are filled with 7ths, 9ths, and numerous other
+            unfamiliar additions. In this lesson, we'll learn the sevenths. To
+            build a major 7th (maj7) we add the 7 from the major scale to the
+            1-3-5 for the major chord, making the
+            <strong>maj7 formula: 1-3-5-7</strong>. If a lead sheet adds 7 to a
+            chord without the "maj" or "m", this is what's called a dominant
+            7th. For this chord, we will take that same b7 and add it to the
+            1-3-5 for the major chord, making the
+            <strong>dominant 7 formula: 1-3-5-b7</strong>. For the minor 7th, we
+            will from the major scale a half step (b7) and then add it to the
+            1-b3-5 for the minor chord, making the
+            <strong>m7 formula: 1-b3-5-b7</strong>. The next seventh chord we
+            will learn is the m7b5, which is built by adding the b7 to the
+            1-b3-b5 for the diminished chord, making the
+            <strong>m7b5 formula: 1-b3-b5-b7</strong>. the final seventh chord
+            we will learn is the diminished 7th. You might be thinking, wait,
+            didn't we just add a 7th to the diminished chord? Yes, we did, but
+            that chord goes by a different name. To build a diminished seventh,
+            we must also diminish the 7th, which means we need to lower that b7
+            down another half step to a bb7, making the
+            <strong>dim7 formula: 1-b3-b5-bb7</strong>.
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2>Seventh Chords</h2>
+          <div class="accordion">
+            <h3>maj7</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3</th>
+                  <th scope="col">5</th>
+                  <th scope="col">7</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E#</td>
+                  <td>G#</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A#</td>
+                  <td>C#</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D#</td>
+                  <td>F#</td>
+                  <td>A#</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G#</td>
+                  <td>B</td>
+                  <td>D#</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C#</td>
+                  <td>E</td>
+                  <td>G#</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F#</td>
+                  <td>A</td>
+                  <td>C#</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>B</td>
+                  <td>D</td>
+                  <td>F#</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>D</td>
+                  <td>F</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                  <td>F</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Dominant 7</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3</th>
+                  <th scope="col">5</th>
+                  <th scope="col">b7</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E#</td>
+                  <td>G#</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A#</td>
+                  <td>C#</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D#</td>
+                  <td>F#</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G#</td>
+                  <td>B</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C#</td>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F#</td>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>B</td>
+                  <td>D</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>D</td>
+                  <td>F</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                  <td>Db</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                  <td>E</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>m7</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3b</th>
+                  <th scope="col">5</th>
+                  <th scope="col">7b</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E</td>
+                  <td>G#</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A</td>
+                  <td>C#</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D</td>
+                  <td>F#</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G</td>
+                  <td>B</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C</td>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F</td>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>Bb</td>
+                  <td>D</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>Eb</td>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>Ab</td>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>Db</td>
+                  <td>F</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>Gb</td>
+                  <td>Bb</td>
+                  <td>Db</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>B</td>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>E</td>
+                  <td>Ab</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>A</td>
+                  <td>Db</td>
+                  <td>E</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>m7b5</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">3b</th>
+                  <th scope="col">5b</th>
+                  <th scope="col">7b</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D</td>
+                  <td>F</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>Ab</td>
+                  <td>B</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>Db</td>
+                  <td>E</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>Gb</td>
+                  <td>A</td>
+                  <td>Db</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>B</td>
+                  <td>D</td>
+                  <td>Gb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>E</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>dim7</h3>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Root</th>
+                  <th scope="col">b3</th>
+                  <th scope="col">b5</th>
+                  <th scope="col">bb7</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C#</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">F#</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+                <tr>
+                  <th scope="row">B</th>
+                  <td>D</td>
+                  <td>F</td>
+                  <td>Ab</td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>G</td>
+                  <td>Bb</td>
+                  <td>Db</td>
+                </tr>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>C</td>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>F</td>
+                  <td>Ab</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">G</th>
+                  <td>Bb</td>
+                  <td>Db</td>
+                  <td>E</td>
+                </tr>
+                <tr>
+                  <th scope="row">C</th>
+                  <td>Eb</td>
+                  <td>Gb</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th scope="row">F</th>
+                  <td>Ab</td>
+                  <td>B</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bb</th>
+                  <td>Db</td>
+                  <td>E</td>
+                  <td>G</td>
+                </tr>
+                <tr>
+                  <th scope="row">Eb</th>
+                  <td>Gb</td>
+                  <td>A</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ab</th>
+                  <td>B</td>
+                  <td>D</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                  <th scope="row">Db</th>
+                  <td>E</td>
+                  <td>G</td>
+                  <td>Bb</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gb</th>
+                  <td>A</td>
+                  <td>C</td>
+                  <td>Eb</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 6: More Chords</h2>
+          <p>
+            <strong>8th and Beyond: </strong>If we continue our major scale for
+            a second octave, the numbering system continues on to 8, 9, 10, 11,
+            12, and 13. For the C scale, this would make C-8, D-9, E-10, F-11,
+            G-12, and A-13. It's important to note that we don't actually refer
+            to the 10 or the 12 when naming chords.
+          </p>
+          <p>
+            <strong>9th Chords: </strong>Building a 9th chord is as simple as
+            adding the 9 to the appropriate 7th chord. If you are building a
+            maj9, you take the 1-3-5-7 for the maj7 and add the 9th to make the
+            maj9 formula: 1-3-5-7-9. For a min9, you take the 1-b3-5-b7 for the
+            m7 and add the 9th to make the m9 formula: 1-b3-5-b7-9.
+          </p>
+          <p>
+            <strong>Beyond the 9th: </strong>Chords beyond the 9th are outside
+            the scope of this tutorial, but I have included a Chord Speller that
+            will give you the notes of most every chord you will every encounter
+            on a lead sheet.
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2>Chord Speller</h2>
+          <select class="form-select" id="rootSelection">
+            <option selected>Choose a root</option>
+            <option value="csharp">C#</option>
+            <option value="fsharp">F#</option>
+            <option value="b">B</option>
+            <option value="e">E</option>
+            <option value="a">A</option>
+            <option value="d">D</option>
+            <option value="g">G</option>
+            <option value="c">C</option>
+            <option value="f">F</option>
+            <option value="bb">Bb</option>
+            <option value="eb">Eb</option>
+            <option value="ab">Ab</option>
+            <option value="db">Db</option>
+            <option value="gb">Gb</option>
+          </select>
+          <select class="form-select mt-3" id="chordSelection">
+            <option selected>Choose a chord</option>
+            <option value="major">major</option>
+            <option value="m">m</option>
+            <option value="dim">dim</option>
+            <option value="aug">aug</option>
+            <option value="maj7">maj7</option>
+            <option value="7">7</option>
+            <option value="m7">m7</option>
+            <option value="m7b5">m7b5</option>
+            <option value="dim7">dim7</option>
+            <option value="maj9">maj9</option>
+            <option value="9">9</option>
+            <option value="sus2">sus2</option>
+            <option value="sus4">sus4</option>
+            <option value="7sus4">7sus4</option>
+            <option value="aug7">aug7</option>
+            <option value="aug9">aug9</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="69">69</option>
+            <option value="7b5">7b5</option>
+            <option value="7b9">7b9</option>
+            <option value="7sharp9">7#9</option>
+            <option value="7b5b9">7b5b9</option>
+            <option value="7sharp5b9">7#5b9</option>
+            <option value="7b5sharp9">7b5#9</option>
+            <option value="7sharp5sharp9">7#5#9</option>
+            <option value="9b5">9b5</option>
+            <option value="9sharp11">9#11</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="add9">add9</option>
+            <option value="maj7b5">maj7b5</option>
+            <option value="maj7sharp5">maj7#5</option>
+            <option value="maj11">maj11</option>
+            <option value="maj13">maj13</option>
+            <option value="m6">m6</option>
+            <option value="m69">m69</option>
+            <option value="m9">m9</option>
+            <option value="m11">m11</option>
+            <option value="mmaj7">mmaj7</option>
+            <option value="mmaj7b5">mmaj7b5</option>
+            <option value="mmaj9">mmaj9</option>
+            <option value="mmaj11">mmaj11</option>
+            <option value="madd9">madd9</option>
+          </select>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-dark mt-3" id="showNotesBtn">
+              Show Notes
+            </button>
+          </div>
+          <div class="text-center m-5" id="showNotes"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
+          <h2>Lesson 7: Transcription</h2>
+          <p>
+            <strong>The Importance of Transcription: </strong>We have finally
+            arrived at the end of our tutorial. Hopefully, I've given you a lot
+            of information to experiment with as you explore the world of
+            improvisation. But before we go, I want to leave you with some
+            advice from one of my favorite musicians, my son. When I asked him,
+            how do you teach someone to improvise, his immediate unfiltered
+            response was this:
+            <q
+              >Play scales and chords, listen, transcribe, listen some more,
+              transcribe some more, play more scales and chords.</q
+            >
+            That pretty much sums it up.
+          </p>
+          <p>
+            <strong>Starting to Transcribe: </strong>So what is transcription?
+            Transcription is a fancy word for put what you hear on paper. Turn
+            on one of your favoirite recordings and listen. Listen until you
+            hear a snippet of improvisation that inspires you. Now slow down the
+            recording and figure out those notes. It will be work, but it will
+            be worth it. Next, write them down somewhere, preferably on your
+            heart or in your soul, but also on paper or in the space I've
+            provided on this page. This is transcription. If you do it enough it
+            will change your playing forever. Now go and play your scales and
+            chords, listen, transcribe and most of all always remember the quote
+            at the top of the page: <q>Do not fear mistakes. There are none.</q>
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
+          <h2>Favorite Fills</h2>
+          <textarea id="favoriteFills" rows="20" cols="24"></textarea><br />
+          <div class="text-center">
+            <button type="button" class="btn btn-dark" id="saveFills">
+              Save
+            </button>
+            <button type="button" class="btn btn-dark" id="clearFills">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="row">
+        <div class="text-center pt-5">
+          <button id="bookLessonBtn" type="button" class="btn btn-light">
+            Book a Lesson
+          </button>
+        </div>
+        <p class="text-center m-4">
+          <small>Copyright &copy;2022 Sherrisa Classon</small><br />
+          <small>This site is for educational purposes only.</small>
         </p>
-        <p><strong>9th Chords: </strong>Building a 9th chord is as simple as adding the 9 to the appropriate 7th chord. If you are building a maj9, you take the 1-3-5-7 for the maj7 and add the 9th to make the maj9 formula: 1-3-5-7-9. For a min9, you take the 1-b3-5-b7 for the m7 and add the 9th to make the m9 formula: 1-b3-5-b7-9. </p>
-        <p><strong>Beyond the 9th: </strong>Chords beyond the 9th are outside the scope of this tutorial, but I have included a Chord Speller that will give you the notes of most every chord you will every encounter on a lead sheet.</p>
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <h2>Chord Speller</h2>
-        <select class="form-select" id="rootSelection">
-          <option selected>Choose a root</option>
-          <option value="csharp">C#</option>
-          <option value="fsharp">F#</option>
-          <option value="b">B</option>
-          <option value="e">E</option>
-          <option value="a">A</option>
-          <option value="d">D</option>
-          <option value="g">G</option>
-          <option value="c">C</option>
-          <option value="f">F</option>
-          <option value="bb">Bb</option>
-          <option value="eb">Eb</option>
-          <option value="ab">Ab</option>
-          <option value="db">Db</option>
-          <option value="gb">Gb</option>
-        </select>
-        <select class="form-select mt-3" id="chordSelection">
-          <option selected>Choose a chord</option>
-          <option value="major">major</option>
-          <option value="m">m</option>
-          <option value="dim">dim</option>
-          <option value="aug">aug</option>
-          <option value="maj7">maj7</option>
-          <option value="7">7</option>
-          <option value="m7">m7</option>
-          <option value="m7b5">m7b5</option>
-          <option value="dim7">dim7</option>
-          <option value="maj9">maj9</option>
-          <option value="9">9</option>
-          <option value="sus2">sus2</option>
-          <option value="sus4">sus4</option>
-          <option value="7sus4">7sus4</option> 
-          <option value="aug7">aug7</option>
-          <option value="aug9">aug9</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="69">69</option>
-          <option value="7b5">7b5</option>
-          <option value="7b9">7b9</option>
-          <option value="7sharp9">7#9</option>
-          <option value="7b5b9">7b5b9</option>
-          <option value="7sharp5b9">7#5b9</option>
-          <option value="7b5sharp9">7b5#9</option>
-          <option value="7sharp5sharp9">7#5#9</option>
-          <option value="9b5">9b5</option>
-          <option value="9sharp11">9#11</option>
-          <option value="11">11</option>
-          <option value="13">13</option>
-          <option value="add9">add9</option>
-          <option value="maj7b5">maj7b5</option>
-          <option value="maj7sharp5">maj7#5</option>
-          <option value="maj11">maj11</option>
-          <option value="maj13">maj13</option>
-          <option value="m6">m6</option>
-          <option value="m69">m69</option>
-          <option value="m9">m9</option>
-          <option value="m11">m11</option>
-          <option value="mmaj7">mmaj7</option>
-          <option value="mmaj7b5">mmaj7b5</option>
-          <option value="mmaj9">mmaj9</option>
-          <option value="mmaj11">mmaj11</option>
-          <option value="madd9">madd9</option>
-        </select>
-        <div class="d-grid gap-2">
-          <button type="button" class="btn btn-dark mt-3" id="showNotesBtn">
-            Show Notes
-          </button>
-        </div>
-        <div class="text-center m-5" id="showNotes"></div>
-      </div>
+      </footer>
     </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-7 col-xl-8 p-5 pt-3">
-        <h2>Lesson 7: Transcription</h2>
-        <p><strong>The Importance of Transcription: </strong>We have finally arrived at the end of our tutorial. Hopefully, I've given you a lot of information to experiment with as you explore the world of improvisation. But before we go, I want to leave you with some advice from one of my favorite musicians, my son. When I asked him, how do you teach someone to improvise, his immediate unfiltered response was this: <q>Play scales and chords, listen, transcribe, listen some more, transcribe some more, play more scales and chords." That pretty much sums it up.</q></p>
-         <p><strong>Starting to Transcribe: </strong>So what is transcription? Transcription is a fancy word for put what you hear on paper. Turn on one of your favoirite recordings and listen. Listen until you hear a snippet of improvisation that inspires you. Now slow down the recording and figure out those notes. It will be work, but it will be worth it. Next, write them down somewhere, preferably on your heart or in your soul, but also on paper or in the space I've provided on this page. This is transcription. If you do it enough it will change your playing forever. Now go and play your scales and chords, listen, transcribe and most of all always remember the quote at the top of the page: <q>Do not fear mistakes. There are none.</q></p> 
-          
-          
-        
-      </div>
-      <div class="col-md-12 col-lg-5 col-xl-4 p-5 pt-3">
-        <h2>Favorite Fills</h2>
-        <textarea id="favoriteFills" rows="20" cols="24"></textarea><br />
-        <div class="text-center">
-          <button type="button" class="btn btn-dark" id="saveFills">
-            Save
-          </button>
-          <button type="button" class="btn btn-dark" id="clearFills">
-            Clear
-          </button>
-        </div>
-      </div>
-    </div>
-    <footer id="footer" class="row">
-      <div class="text-center pt-5">
-        <button id="bookLessonBtn" type="button" class="btn btn-light">
-          Book a Lesson
-        </button>
-      </div>
-      <p class="text-center m-4">
-        <small>Copyright &copy;2022 Sherrisa Classon</small><br />
-        <small>This site is for educational purposes only.</small>
-      </p>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>
