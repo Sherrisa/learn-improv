@@ -29,3 +29,6 @@ https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/
 
 obfuscator
 https://obfuscator.io/
+
+How to make the textarea box responsive
+https://www.w3schools.com/howto/howto_css_responsive_form.asp
